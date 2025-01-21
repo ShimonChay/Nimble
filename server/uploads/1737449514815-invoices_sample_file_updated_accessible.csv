@@ -1,0 +1,104 @@
+invoice_id,invoice_date,invoice_due_date,invoice_cost,invoice_currency,invoice_status,supplier_internal_id,supplier_external_id,supplier_company_name,supplier_address,supplier_city,supplier_country,supplier_contact_name,supplier_phone,supplier_email,supplier_bank_code,supplier_bank_branch_code,supplier_bank_account_number,supplier_status,supplier_stock_value,supplier_withholding_tax
+INV001,01/09/2024,15/10/2024,1000.0,USD,CONFIRMED,SUPP001,EXT000111,Supplier 1 Inc.,123 Main St,New York,US,Moshe Zvolon,555-1234,supplier1@example.com,31,1,,ACTIVE,5000,10.0
+INV002,05/09/2024,01/11/2024,1500.0,EUR,CONFIRMED,SUPP002,EXT000222,Supplier 2 LLC,456 Side Rd,Paris,FR,Itay Bandosh,555-5678,supplier2@example.com,31,2,87654321.0,INACTIVE,7500,15.0
+INV003,10/09/2024,02/12/2024,1200.0,USD,CANCELLED,SUPP003,EXT000333,Supplier 3 Ltd.,789 Another St,London,GB,shimon chay,555-9876,supplier3@example.com,31,3,11223344.0,INACTIVE,6200,12.5
+INV9413,15/08/2024,30/06/2025,1731.68,GBP,PENDING,SUPP430,EXT114960,Nash-Cruz,"02070 Alexander Neck
+South Aprilbury, DC 91161",Jamesburgh,GY,Autumn Andrews,001-785-687-9154x9830,kduke@baxter.com,81,2,56613904.0,INACTIVE,4322,6.0
+INV5054,07/05/2024,08/08/2025,2372.6,EUR,PAID,SUPP114,EXT714011,"Snyder, Robbins and Reed","2265 Angel Meadows Apt. 436
+Sloanmouth, RI 59949",East Nathan,FR,April Meadows,001-419-707-9387x06144,folson@peterson.com,43,10,17009886.0,ACTIVE,7360,16.1
+INV1023,13/10/2024,11/09/2026,508.03,EUR,CANCELLED,SUPP774,EXT298105,Smith PLC,"39414 Jose Drive
+Andreaport, NJ 79534",East Autumntown,GA,Devin Torres,216.872.7042,melissa23@miller.info,79,6,10404516.0,INACTIVE,9513,13.5
+INV1419,09/11/2024,25/08/2026,2029.63,USD,PAID,SUPP748,EXT383973,Bridges Inc,"16601 Patrick Falls Suite 060
+West Kaylaton, CT 03104",Murraystad,CR,Courtney Smith,001-817-470-1109x7756,kellyfoster@greer.biz,44,9,97183704.0,INACTIVE,5642,11.8
+INV7878,12/07/2024,14/12/2025,4862.02,EUR,CONFIRMED,SUPP560,EXT750632,"Joyce, Figueroa and Cross","2009 Sarah Divide Apt. 342
+Wagnertown, MT 32826",Sallymouth,GA,Marc Ryan,(131)338-3060,gonzalesheather@calderon.com,67,3,15547403.0,INACTIVE,6303,8.3
+INV8803,15/12/2024,30/09/2026,902.15,USD,PENDING,SUPP238,EXT107360,Casey-Perez,"7151 Madison Crescent Apt. 950
+South Laurenside, AL 12671",South Jonathanview,NL,Kyle Austin,(222)912-1095x1406,cody54@yahoo.com,29,1,22612805.0,INACTIVE,9368,11.1
+INV3568,12/01/2025,16/04/2026,2407.78,USD,CONFIRMED,SUPP902,EXT782756,"Fox, Flores and Morgan","PSC 3341, Box 5062
+APO AP 99051",Alyssachester,HN,Cody Ramos,2526458300,whitehailey@nguyen-miller.com,10,1,47958272.0,ACTIVE,4915,18.8
+INV5901,22/08/2024,18/06/2025,2589.35,GBP,PENDING,SUPP632,EXT201387,"Miller, Stevens and Perez","PSC 1057, Box 4149
+APO AA 75978",Rickyton,GQ,Derek Ali,+1-307-033-5159x18213,whitestephen@hotmail.com,76,6,54307036.0,ACTIVE,8380,19.1
+INV4648,30/07/2024,08/07/2025,2057.08,USD,PAID,SUPP415,EXT409252,"Parker, Chen and Miller","9257 Linda Vista Suite 956
+New Brianburgh, WY 72742",Justinland,SM,Patricia Simmons,+1-991-544-9405x5803,walkersamantha@irwin-bautista.org,80,7,46404649.0,INACTIVE,7627,16.6
+INV8800,25/10/2024,17/05/2026,1533.09,USD,CANCELLED,SUPP731,EXT738541,Ramsey-Ruiz,"143 Bryan Center Apt. 782
+Phillipberg, IA 15586",South Daniel,LK,Alexandria Gardner,+1-620-451-4605x395,janetwatson@hotmail.com,30,3,81609141.0,INACTIVE,3944,17.3
+INV5219,30/08/2024,07/11/2026,3149.43,EUR,CANCELLED,SUPP224,EXT890472,Grant and Sons,"40821 Stephanie Via
+Hillfort, DE 95517",Sullivanmouth,ML,Carla Roberts,953.694.7697,whiteanthony@hotmail.com,26,5,77211115.0,INACTIVE,8145,17.0
+INV2495,16/01/2025,04/12/2025,4943.73,EUR,PENDING,SUPP844,EXT159209,Taylor PLC,"9467 Burke Coves
+West Tina, CO 33276",New Brooke,AL,Tyler Velasquez,043.899.4656x496,mark06@allen.org,71,8,36986869.0,INACTIVE,1346,7.7
+INV1736,27/11/2024,18/04/2026,1627.81,EUR,PENDING,SUPP819,EXT301513,Rodriguez Inc,"030 Megan Freeway
+East Brian, SC 33528",Annettetown,ET,Bradley Reynolds,+1-837-065-2426,kimberly79@hotmail.com,39,1,65139131.0,ACTIVE,2234,14.5
+INV8427,02/01/2025,11/10/2026,3183.77,GBP,CANCELLED,SUPP213,EXT673793,Williams Group,"USS Williams
+FPO AA 56215",Blackmouth,BY,Karen Wood,(380)273-7144,lcampbell@gmail.com,16,8,90037921.0,INACTIVE,7952,6.9
+INV1947,06/04/2024,23/05/2025,3650.77,USD,PENDING,SUPP125,EXT856883,"Lopez, Kaufman and Wood","7241 Gonzalez Lock Suite 543
+South Charles, IA 40282",East Breannaport,MD,Leslie Miller DVM,(242)094-8205,caldwelltiffany@garcia.com,50,6,94165057.0,INACTIVE,2335,9.9
+INV1251,31/03/2024,26/03/2025,2888.99,USD,CONFIRMED,SUPP670,EXT370116,Hernandez-Lutz,"46628 John Stream
+Millsmouth, CT 36538",North Jacqueline,MH,Abigail Mason,+1-725-206-2609x02231,ktownsend@gmail.com,89,9,38492909.0,INACTIVE,8542,13.4
+INV2086,18/01/2025,10/09/2026,3649.58,EUR,PAID,SUPP850,EXT872325,Baxter Ltd,"75351 Stevens Pines Suite 526
+Leslietown, AR 42670",Sarahport,VU,Zoe Williamson,007.258.5691x77495,moorebrenda@odom.org,95,1,93822818.0,INACTIVE,7415,8.3
+INV4774,09/09/2024,10/02/2026,4003.24,USD,PENDING,SUPP572,EXT337206,Gallegos PLC,"979 Weaver Falls Apt. 755
+East William, KS 93387",New Cynthiaport,GT,Jennifer Arias,001-112-622-4249,meltonjames@yahoo.com,64,4,77773281.0,INACTIVE,2568,5.2
+INV2630,27/11/2024,27/05/2026,4781.91,EUR,CONFIRMED,SUPP879,EXT983114,King Inc,"90911 Timothy Drive
+Bartlettside, IA 90660",South Jonathan,MW,Thomas Ramos,+1-733-086-4517x32272,casepatrick@martinez-gill.org,98,10,37057334.0,INACTIVE,3910,19.7
+INV6619,04/03/2024,19/04/2025,3460.44,USD,CANCELLED,SUPP331,EXT305520,Parker-Williams,"941 Thomas Keys Apt. 093
+East Petershire, MN 36506",Lake Williamstad,DE,Jasmine Bridges,193-773-2806x925,ypotts@shelton.com,76,1,22491958.0,ACTIVE,5749,12.0
+INV7891,16/08/2024,12/10/2025,2039.03,GBP,CONFIRMED,SUPP744,EXT422035,Jacobson-Harris,"9612 Michael Parkways
+Kristenchester, PA 16980",Johnsonside,UA,Juan Jones,(947)174-2290x2624,hrogers@cunningham.com,97,2,46651560.0,ACTIVE,5237,13.4
+INV2993,01/07/2024,11/02/2026,4336.82,USD,CANCELLED,SUPP152,EXT782118,"Dean, Lucas and Gould","4798 Shelly Shoals Suite 582
+Katherinemouth, MA 31959",Mikeburgh,CZ,George Jimenez,792-533-4077x9233,david07@yahoo.com,15,5,58051389.0,INACTIVE,8902,14.5
+INV1944,29/04/2024,11/01/2026,554.14,GBP,PENDING,SUPP755,EXT357034,"Griffin, Rowe and Flores","91156 Santos Estate
+East Jesse, UT 23016",East Brianna,DM,Rebecca Nichols,979-831-0460,amy93@hotmail.com,61,6,90838814.0,ACTIVE,4897,11.3
+INV1435,14/09/2024,21/06/2026,4363.61,EUR,CONFIRMED,SUPP870,EXT349636,Jones Group,"6534 Haynes Mills Suite 725
+Dunnview, VT 15706",Foxville,SD,Sherri White,5369321536,bchapman@smith-bryant.biz,79,5,43953022.0,INACTIVE,9238,12.6
+INV3738,07/06/2024,12/06/2025,1879.55,EUR,PAID,SUPP951,EXT242690,"Cole, Moore and Lynch","315 Shaw Flats Apt. 555
+Patrickland, NY 38377",Port Kayla,TM,Robin Diaz,+1-773-093-0953x2131,tiffany48@hotmail.com,24,4,68815567.0,ACTIVE,8415,10.9
+INV6450,06/10/2024,06/01/2027,4461.4,EUR,PAID,SUPP985,EXT137680,Roberts Group,"212 Jennifer Common
+East Samanthachester, ND 30570",Port Matthew,BZ,John Lopez,343-127-8981x5956,paustin@english.net,60,8,84300653.0,INACTIVE,4538,6.9
+INV9339,21/03/2024,17/05/2025,3797.96,GBP,CANCELLED,SUPP399,EXT456758,"Lynch, Bonilla and Turner","6320 Jason Ports Suite 491
+Ashleyport, CT 07200",East Juliefort,NR,Anthony Davidson,332-331-8573,carla59@ryan.com,31,9,15795224.0,ACTIVE,1221,7.8
+INV7002,21/06/2024,12/05/2026,1353.29,GBP,PENDING,SUPP728,EXT910375,Parker and Sons,"169 Snyder Forest
+Cooperbury, NE 84592",Tracyview,CL,Louis Martinez,401.626.6448x88413,michaelsmith@owen-michael.com,24,8,47906708.0,ACTIVE,5680,11.9
+INV9754,05/05/2024,19/09/2025,1950.54,USD,PAID,SUPP867,EXT296608,Harris-Wood,"113 Fields Trail Suite 340
+New Christopherfort, UT 84626",Wilsonview,AE,Dean Mitchell,+1-525-754-4602x25366,jacquelinedavis@anderson.com,34,9,57032395.0,INACTIVE,6958,14.5
+INV1895,02/03/2024,07/12/2026,4488.23,USD,PAID,SUPP766,EXT102935,"Reed, Weber and Powell","063 William Lodge
+Jenniferland, OH 32545",Westshire,DJ,Taylor Cook,521.328.0272x911,johnsonvalerie@barnett-wright.com,29,1,21384517.0,ACTIVE,7133,19.2
+INV9790,04/06/2024,18/11/2025,1997.32,EUR,PAID,SUPP806,EXT683023,"Berg, Williams and May","3847 Harris Trafficway
+Courtneyville, DE 05490",Travishaven,KG,Robert Saunders,001-426-588-7743x138,zroth@yahoo.com,53,1,91465156.0,INACTIVE,1420,7.8
+INV4191,17/06/2024,18/01/2027,786.26,EUR,CANCELLED,SUPP986,EXT908017,"Hill, Robinson and Fitzgerald","6652 Paul Avenue Suite 540
+Greenburgh, VA 15636",South Andrewhaven,MR,Heather Fowler,751.149.9294,karencarey@gmail.com,75,3,16857872.0,INACTIVE,7899,10.6
+INV1541,03/03/2024,05/12/2025,4987.88,USD,PENDING,SUPP325,EXT881094,"Massey, Hernandez and Hubbard","0208 Linda Lane
+South Amber, NV 61381",North Alexander,AL,Roger Suarez,001-059-496-2820x59984,phillipjohnson@yang.com,96,9,79480644.0,INACTIVE,7765,15.0
+INV1386,02/08/2024,04/07/2026,1055.28,GBP,PENDING,SUPP414,EXT415506,Stark PLC,"5512 Hernandez Prairie Suite 445
+Lopezmouth, NH 56373",Debbiechester,VC,Lisa Howard,+1-150-022-2366x751,dillonrobert@marquez-edwards.com,80,8,59971973.0,INACTIVE,9988,17.0
+INV8087,02/03/2024,04/12/2026,2387.3,GBP,CONFIRMED,SUPP925,EXT851812,Clayton and Sons,"5914 Joshua Radial Suite 313
+Jaredville, IL 16194",Scottmouth,AR,Dr. Anthony Keith,466-076-7232,josephdudley@gmail.com,62,5,31212559.0,INACTIVE,4039,13.4
+INV1161,03/08/2024,09/11/2026,2088.36,GBP,CONFIRMED,SUPP961,EXT340114,"James, Sanders and Davis","USS Johns
+FPO AA 74867",Chavezchester,TM,Antonio Wright,001-476-562-4872,laramichael@carroll-chavez.info,95,9,25809205.0,INACTIVE,1637,7.5
+INV6990,20/04/2024,02/07/2026,3701.33,GBP,PENDING,SUPP332,EXT997102,Simmons LLC,"26158 Curtis Place
+Amberview, UT 22256",North Jennifer,SK,Carol Rojas,+1-872-446-1407x948,griffinpaul@casey.net,85,4,47907148.0,INACTIVE,9266,16.4
+INV2358,26/11/2024,05/05/2025,3779.75,EUR,PENDING,SUPP298,EXT985723,"Leblanc, Williams and Bishop","985 Jacob View Apt. 478
+Lake Robert, MA 88340",Port Cassidymouth,KR,Alison Griffith,4574878950,edwin90@duke-baker.com,46,8,11463164.0,INACTIVE,1789,11.4
+INV6631,01/06/2024,22/10/2026,3934.54,EUR,CANCELLED,SUPP687,EXT600646,Davis Inc,"12887 Melissa Vista
+Ricardotown, MI 21681",South Maryton,SE,Jeffrey Cabrera,2979061106,erin19@yahoo.com,79,5,96915094.0,ACTIVE,8200,7.7
+INV2243,20/06/2024,06/04/2025,1216.86,USD,PENDING,SUPP580,EXT698052,Ruiz LLC,"71659 Allison Trafficway Suite 320
+East Amanda, WY 23829",Lake Justin,GE,Aimee Baldwin,302-312-8553,jallen@simmons.org,94,3,88963143.0,INACTIVE,8878,10.9
+INV7204,15/11/2024,05/05/2026,4029.62,GBP,PAID,SUPP231,EXT513719,"Garcia, Burnett and Gardner","USCGC Yang
+FPO AP 23128",New Misty,LB,Christopher Williamson,001-815-012-3393x80388,baileyking@benjamin.info,67,6,58831278.0,ACTIVE,9835,14.4
+INV7340,12/08/2024,25/02/2026,1246.86,GBP,PAID,SUPP687,EXT885118,"Rodriguez, Brady and Contreras","1048 Brian Pass
+Lake Robert, MO 19273",Arnoldton,PE,Scott Salazar,+1-305-919-2190x84798,ojohnson@gilbert.com,72,1,27920048.0,ACTIVE,9462,5.3
+INV4190,17/04/2024,11/02/2026,2585.15,EUR,CANCELLED,SUPP228,EXT644384,Andrews LLC,"USS Jensen
+FPO AE 93853",Harrisland,PY,Jacqueline Harris,+1-575-591-7190x431,bcraig@hill.com,41,8,89411970.0,ACTIVE,7203,6.5
+INV6301,19/04/2024,30/10/2025,3907.89,EUR,CANCELLED,SUPP654,EXT253823,Miller-Flynn,"4085 Rivas Creek Suite 685
+East Thomas, VT 63162",Michaelbury,BR,Cody Mckinney,001-060-859-4196x3178,kelly23@green-jones.info,86,8,58308913.0,ACTIVE,9976,6.7
+INV5760,21/08/2024,12/03/2025,4927.14,EUR,CONFIRMED,SUPP883,EXT411999,"Smith, Powers and Wells","016 Lee Ports Suite 784
+Connorland, GA 34953",North Josephport,GB,Kimberly Short,+1-218-205-4582x436,debra13@rodgers-moore.com,61,9,34015004.0,INACTIVE,5297,18.0
+INV9007,20/01/2025,18/01/2027,3431.9,USD,CANCELLED,SUPP300,EXT514215,Zimmerman and Sons,"14015 Sawyer Club Apt. 676
+South Tammymouth, NM 91783",East Amanda,NZ,Michael Shelton,664-816-9885x62985,thernandez@yahoo.com,17,5,72132702.0,INACTIVE,9281,9.0
+INV3484,27/03/2024,28/09/2025,1182.35,GBP,PAID,SUPP958,EXT408909,"Diaz, Rowe and Sims","78706 Erin Corners Apt. 608
+North Dawn, NM 22379",South Scottberg,NP,Christopher Cochran,6376581833,emurphy@gmail.com,47,6,92821528.0,INACTIVE,6593,8.1
+INV6501,27/08/2024,29/08/2026,3786.12,GBP,PAID,SUPP742,EXT529916,"Mueller, Figueroa and Miller","5225 Melissa Mission Suite 203
+Griffinland, OK 34341",Aguilartown,VN,Duane Kerr,+1-459-166-6305x2881,daniellemartinez@hotmail.com,60,5,17334965.0,ACTIVE,2512,16.6
+INV9390,18/08/2024,14/02/2025,3092.78,GBP,PENDING,SUPP137,EXT159239,Sanchez-Gray,"Unit 8908 Box 3377
+DPO AP 11633",Smithbury,SY,Laurie Cunningham,(213)204-4087x9831,davidholt@davis.com,26,2,19084701.0,INACTIVE,8311,9.8
+INV6659,03/11/2024,10/02/2025,4080.5,USD,PAID,SUPP208,EXT797788,Anderson-Ramirez,"60104 Julie Summit Apt. 346
+East William, MA 35840",Ramirezchester,BF,Kelly Wade,001-684-679-9895x40088,theresa66@gmail.com,38,9,44369773.0,INACTIVE,6335,12.0
