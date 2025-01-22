@@ -5,11 +5,11 @@ const InvoiceService = {
   getTotalByStatus: async () => {
     return (await (axios.get(`${BASE_URL}${INVOICE_URL}/totals-by-status`))).data;
   }, 
-  getOverdueTrend: async () => {
-    return (await (axios.get(`${BASE_URL}${INVOICE_URL}/overdue-trend`))).data;
+  getOverdueTrend: async (filters?: Record<string, any>) => {
+    return (await (axios.get(`${BASE_URL}${INVOICE_URL}/overdue-trend`, { params: { filters }}))).data;
   }, 
-  getMonthlyInvoiceTotals: async () => {
-    return (await (axios.get(`${BASE_URL}${INVOICE_URL}/monthly-invoice-totals`))).data;
+  getMonthlyInvoiceTotals: async (filters?: Record<string, any>) => {
+    return (await (axios.get(`${BASE_URL}${INVOICE_URL}/monthly-invoice-totals`, { params: { filters }}))).data;
   }, 
   getInvoicesBySupplier: async (supplierId: string) => {
     return (await (axios.get(`${BASE_URL}${INVOICE_URL}/by-supplier`, {

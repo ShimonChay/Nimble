@@ -1,50 +1,81 @@
-# React + TypeScript + Vite
+# Nimble - Home Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is an invoices and suppliers management dashboard that provides a comprehensive view of their details, including associated data visualizations. It is built using React, MUI, and custom reusable components for charts and tables.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Ensure the following are installed:
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js
+- npm
+- Docker (The project uses `docker-compose` for easy database setup)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Installation
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clone the repository:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```sh
+   git clone https://github.com/ShimonChay/Nimble.git
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ```
+
+2. Navigate to the Client folder and run:
+   ```sh
+   npm install
+   npm run dev
+   ```
+   The client will be available at http://localhost:5173.
+
+3. Navigate to the Server folder and run:
+
+   ```sh
+   npm install
+   ```
+
+4. Use the provided `docker-compose.yml` file to create the database in Docker. To start, run:
+   ```sh
+   docker compose up -d
+   ```
+
+   You can interact with the database using:
+   ```sh
+   docker exec -it postgres_container psql -U postgres 
+   ```
+   Alternatively, you can connect manually via pgAdmin.
+
+5. In the Server folder, start the server:
+   ```sh
+   npm start
+   ```
+   The server will run at http://localhost:3000. When the server starts for the first time, it will automatically create the database tables.
+
+6. To populate the tables with data, upload a CSV file using Postman or similar tools to the endpoint: http://localhost:3000/csv/upload-csv.
+
+## Implementations
+1. <u>**Main view**</u>: The main view displays charts with data about existing invoices. You can select the chart type and filter using the provided options. Filtering by date does not require specifying both startDate and endDate — they are automatically set on the server.
+2. <u>**Supplier view**</u>: From the main view, click the button in the top-left corner to navigate to the supplier view. This view displays a table of the 10 suppliers with the most invoices. You can also filter suppliers by their company name in the search bar. The results will show the top 10 suppliers matching the search criteria.
+3. <u>**Debounce**</u>: To minimize unnecessary server requests during supplier searches, debounce functionality is implemented. Requests are sent only after a brief delay, ensuring the user has finished entering the search term.
+4. <u>**Supplier details**</u>: Click the expand button next to a supplier to view personal statistics and charts (if available).
+
+
+## Notes
+
+1. Some server queries use replacements to prevent SQL injection. Even though pure SQL is used, there is no security risk.
+2. If the tables are not created when the server loads, run:
+
+   ```sh
+   npx sequelize-cli db:migrate      
+   ```
+   Ensure `npm install` is executed beforehand.
+   
+3. Most of the charts are from MUI, except for the horizontal chart, which was created from scratch (in case that’s what you were referring to)
+4. Screenshots of the project are attached to the email sent to Omer.
+
+Toda Raba, Chay.
+
+
+

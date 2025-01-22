@@ -32,33 +32,43 @@ export class InvoiceRepository {
     }));
   }
 
-  async getOverdueTrend(): Promise<{ month: Date; overdue_count: number }[]> {
+  async getOverdueTrend(beginDate: string, endDate: string): Promise<{ month: Date; overdue_count: number }[]> {
     const [results] = await this.sequelize.query(
       `
       SELECT DATE_TRUNC('month', "due_date") AS month, COUNT(*) AS overdue_count
       FROM "Invoices"
-      WHERE "due_date" < NOW() AND "status" != 'PAID' AND "status" != '"CANCELLED"'
+      WHERE "due_date" BETWEEN :beginDate AND :endDate
+        AND "due_date" < NOW()
+        AND "status" != 'PAID'
+        AND "status" != 'CANCELLED'
       GROUP BY month
       ORDER BY month
       `,
+      {
+        replacements: { beginDate: beginDate, endDate: endDate },
+      }
     );
-
+  
     return results.map((row: any) => ({
       month: new Date(row.month),
       overdue_count: parseInt(row.overdue_count, 10),
     }));
   }
 
-  async getMonthlyInvoiceTotals(): Promise<{ month: Date; total: number }[]> {
+  async getMonthlyInvoiceTotals(beginDate: string, endDate: string): Promise<{ month: Date; total: number }[]> {
     const [results] = await this.sequelize.query(
       `
       SELECT DATE_TRUNC('month', "date") AS month, COUNT(*) AS total
       FROM "Invoices"
+      WHERE "date" BETWEEN :beginDate AND :endDate
       GROUP BY month
       ORDER BY month
       `,
+      {
+        replacements: { beginDate, endDate },
+      }
     );
-
+  
     return results.map((row: any) => ({
       month: new Date(row.month),
       total: parseFloat(row.total),

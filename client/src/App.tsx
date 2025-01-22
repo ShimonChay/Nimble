@@ -25,7 +25,7 @@ const Nav: FC = () => {
   return (
     <div className="nav">
       <Button
-        style={{ textTransform: 'none'}}
+        style={{ textTransform: 'none', fontWeight: 'bold'}}
         color="secondary"
         variant={"contained"}
         onClick={handleNavigation}

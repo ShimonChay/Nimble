@@ -21,13 +21,3 @@
   margin-top: 16px;
   justify-content: center;
 }
-
-.chartFilters {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 200px;
-  height: 100%;
-  background-color: #02B2AF;
-  border-radius: 0 10px 10px 0;
-}

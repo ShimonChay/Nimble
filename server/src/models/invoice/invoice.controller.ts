@@ -9,16 +9,16 @@ export class InvoiceController {
   async getTotalsByStatus() {
     return this.invoiceService.getTotalsByStatus();
   }
-
   
   @Get('overdue-trend')
-  async getOverdueTrend() {
-    return this.invoiceService.getOverdueTrend();
+  async getOverdueTrend(@Query('filters') filters: {beginDate: string, endDate: string}) {
+    console.log(filters)
+    return this.invoiceService.getOverdueTrend(filters?.beginDate, filters?.endDate);
   }
 
   @Get('monthly-invoice-totals')
-  async getMonthlyInvoiceTotals() {
-    return this.invoiceService.getMonthlyInvoiceTotals();
+  async getMonthlyInvoiceTotals(@Query('filters') filters: {beginDate: string, endDate: string}) {
+    return this.invoiceService.getMonthlyInvoiceTotals(filters?.beginDate, filters?.endDate);
   }
 
   @Get('by-supplier')

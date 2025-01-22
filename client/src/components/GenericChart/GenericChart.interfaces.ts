@@ -11,12 +11,19 @@ export enum ChartSize {
   LARGE = "large"
 }
 
+export enum FilterType {
+  DATE_RANGE = "dateRange",
+  CHECKBOX = "checkbox"
+}
+
 export interface ChartConfig {
   id: string;
   title: string;
   supportedTypes: ChartTypes[];
   chartType: ChartTypes;
+  filterType: FilterType;
   data: { name: string; value: number }[];
+  updateFunction: (filters: Record<string, any>) => Promise<ChartConfig>;
 }
 
 export interface ChartData {
